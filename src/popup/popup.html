@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Swagger Auto Login</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="popup.css">
+        <script src="popup.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <h2>Swagger Auto Login</h2>
+        </div>
+
+        <div id="form">
+            <div class="group">
+                <input placeholder="Absolute route eg.: api/login" class="inputMaterial" type="text" id="endpoint">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>EndPoint</label>
+            </div>
+
+            <div class="group">
+                <textarea placeholder="Valid Json format                  eg.: {&quot;username&quot;: &quot;joe&quot;}" class="inputMaterial" id="JsonField" style="height: 200px;"></textarea>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Json</label>
+            </div>
+
+            <div class="group">
+                <label style="top:0; left: 25px;">Auto Login</label>
+                <input class="inputCheckbox" type="checkbox" id="autologin">
+            </div>
+            
+            <button type="button" id="saveButton" class="enabled">Save</button>
+        </div>
+    </body>
+</html>
